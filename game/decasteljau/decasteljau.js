@@ -4,12 +4,12 @@
      * If you want to know more about algorith itself check out
      * Wikipedia:
      * {@link http://en.wikipedia.org/wiki/De_Casteljau's_algorithm}
-     * 
+     *
      * @param  {array} points   array of control points of Bezier curve
      * @param  {double} t       value between 0 and 1 - 0 is for the beginning of the curve, 1 is for the end
      * @return {array}          point on Bezier curve, index 0 is x coord, index 1 is y coord
      */
-    function deCasteljauAlgorithm (points, t) {
+    function deCasteljauAlgorithm(points, t) {
         if (t === 1) {
             return points[points.length - 1];
         }
@@ -30,17 +30,17 @@
 
         return deCasteljauAlgorithm(calculatedPoints, t);
     }
-    
+
     /**
      * Return two curves splited on t
-     * 
+     *
      * @param  {array} points   array of control points of Bezier curve
      * @param  {double} t       value between 0 and 1 - 0 is for the beginning of the curve, 1 is for the end
-     * 
+     *
      * @returns {array} curves	array of arrays, two bezier curves
-     */    
+     */
 
-    function divideBezierCurve (points, t, bezierA, bezierB) {
+    function divideBezierCurve(points, t, bezierA, bezierB) {
         bezierA = bezierA || [];
         bezierB = bezierB || [];
 
@@ -63,12 +63,12 @@
     /**
      * Helper function calculating new point between two given points.
      * The new point is t of the distance between given points.
-     * 
+     *
      * @param  {array} points
      * @param  {double} t
      * @return {array}
      */
-    function calculatePoints (points, t) {
+    function calculatePoints(points, t) {
         var p1X = points[0][0], //x coord of first point
             p1Y = points[0][1], //y coord of first point
             p2X = points[1][0], //x coord of second point
@@ -82,6 +82,6 @@
 
     global["de"] = {
         casteljau: deCasteljauAlgorithm,
-        divideBezierCurve: divideBezierCurve
+        divideBezierCurve: divideBezierCurve,
     };
 })(this);

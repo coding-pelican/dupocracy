@@ -1,236 +1,236 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-family: Impact;
-	background: black;
+    margin: 0;
+    padding: 0;
+    font-family: Impact;
+    background: black;
 }
 
 .mask {
-	background: rgba(0,0,0,0.5);
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
 }
 
-body>.canvas-container {
-	margin: 0 auto;
-	position: relative;
-	display: block;
+body > .canvas-container {
+    margin: 0 auto;
+    position: relative;
+    display: block;
 }
 
-body>.canvas-container>canvas {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	width: 100%;
-	height: 100%;
+body > .canvas-container > canvas {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 /* fog of war */
 
 body canvas.fog-of-war {
-	opacity: 0.7;
-	pointer-events: none;
+    opacity: 0.7;
+    pointer-events: none;
 }
 
 /* prompt dialog */
 
 .promptDialog {
-	width: 400px;
-	top: 50px;
-	position: absolute;
-	left: 50%;
-	margin-left: -200px;
-	padding: 30px 50px;
-	color: white;
+    width: 400px;
+    top: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    padding: 30px 50px;
+    color: white;
 
-	background: rgba(0, 0, 0, 0.72);
-	box-shadow: 0px 0px 5px black;
-	border-radius: 10px;
-	border-top: 10px solid #2f3071
+    background: rgba(0, 0, 0, 0.72);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    border-top: 10px solid #2f3071;
 }
 
 .promptDialog .error {
-	color: #cc0000;
-	font-weight: bold;
+    color: #cc0000;
+    font-weight: bold;
 }
 
 .promptDialog * {
-	display: block;
-	margin: 10px;
+    display: block;
+    margin: 10px;
 }
 
 /* input */
 
 .promptDialog input {
-	background: black;
-	color: white;
-	border: 1px solid #888;
-	padding: 5px 10px;
-	border-radius: 4px;
+    background: black;
+    color: white;
+    border: 1px solid #888;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 /* buttons */
 
 .promptDialog button {
-	background: #2f3071;
-	color: white;
-	border: none;
-	padding: 5px 15px;
-	cursor: pointer;
-	font-size: large;
+    background: #2f3071;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: large;
 }
 
 .promptDialog button:hover {
-	background: #1C224E;
+    background: #1c224e;
 }
 
 /* cotext menu */
 
 .cmenu {
-	position: absolute;
-	background: rgba(0,0,0,0.9);
-	color: white;
-	padding: 5px 10px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 5px 10px;
 }
 
 .cmenu button {
-	display: block;
-	border: none;
-	background: none;
-	color: white;
-	border: white;
-	cursor: pointer;
-	transition: background 0.4s linear, color 0.4s linear;
-	-webkit-transition: background 0.4s linear, color 0.4s linear;
+    display: block;
+    border: none;
+    background: none;
+    color: white;
+    border: white;
+    cursor: pointer;
+    transition: background 0.4s linear, color 0.4s linear;
+    -webkit-transition: background 0.4s linear, color 0.4s linear;
 }
 
 .cmenu button:hover {
-	background: white;
-	color: black;
+    background: white;
+    color: black;
 }
 
 /* dialog heading */
 
 .dialog h3 {
-	background: #2f3071;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	margin: 0;
-	padding: 0px 10 5px;
-	box-shadow: 0px 0px 5px #2f3071;
-	text-shadow: 0px 0px 5px rgba(255,255,255,0.5);
+    background: #2f3071;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0;
+    padding: 0px 10 5px;
+    box-shadow: 0px 0px 5px #2f3071;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
 }
 
 /* faction widget */
 
 .factionWidget {
-	position: fixed;
-	top: 20%;
-	left: 50%;
-	color: white;
-	width: 600px;
-	margin-left: -300px;
-	padding: 50px;
-	background: rgba(0, 0, 0, 0.72);
-	box-shadow: 0px 0px 5px black;
-	border-radius: 10px;
-	border-top: 10px solid #2f3071
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    color: white;
+    width: 600px;
+    margin-left: -300px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.72);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    border-top: 10px solid #2f3071;
 }
 
 .factionWidget li {
-	display: inline-block;
-	width: 100px;
-	text-align: center;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
 }
 
 .factionWidget span {
-	font-weight: normal;
-	display: block;
+    font-weight: normal;
+    display: block;
 }
 
 .factionWidget span button {
-	background: none;
-	border: none;
-	color: white;
-	font-weight: bold;
-	cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .factionWidget span button:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .factionWidget span i {
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 .factionWidget .ready {
-	margin-top: 20px;
-	margin-bottom: -10px;
+    margin-top: 20px;
+    margin-bottom: -10px;
 }
 
 .factionWidget .ready button {
-	background: #2f3071;
-	color: white;
-	border: none;
-	padding: 5px 15px;
-	cursor: pointer;
-	font-size: large;
+    background: #2f3071;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: large;
 }
 
 .factionWidget .ready button:hover {
-	background: #1C224E;
+    background: #1c224e;
 }
 
 /* status */
 .status {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	background: rgba(0,0,0,0.8);
-	color: white;
-	text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
 }
 
-.status>span {
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	text-align: center;
-	left: 0px;
-	font-size: x-large;
-	text-shadow: 0px 0px 15px white;
+.status > span {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+    font-size: x-large;
+    text-shadow: 0px 0px 15px white;
 }
 
 /* world time */
 
 .worldtime {
-	position: fixed;
-	width: 100px;
-	text-align: center;
-	color: white;
-	top: 0px;
-	left: 50%;
-	width: 80px;
-	margin-left: -40px;
-	text-shadow: 0px 0px 20px white;
-	box-shadow:  inset 0px 0px 20px white;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	font-size: large;
+    position: fixed;
+    width: 100px;
+    text-align: center;
+    color: white;
+    top: 0px;
+    left: 50%;
+    width: 80px;
+    margin-left: -40px;
+    text-shadow: 0px 0px 20px white;
+    box-shadow: inset 0px 0px 20px white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: large;
 }
 
 .worldtime:empty {
-	display: none;
+    display: none;
 }
 
 /* chat */
@@ -247,35 +247,35 @@ body canvas.fog-of-war {
 }
 
 .chat .chat-input {
-	position: relative;
-	height: 10px;
+    position: relative;
+    height: 10px;
 }
 
 .chat .chat-input input {
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	right: 0px;
-	top: 0px;
-	width: 100%;
-	height: 25px;
-	border: 1px solid #2f3071;
-	background: rgba(47, 48, 113, 0.14);
-	color: white;
-	padding: 2px 3px;
-	font-family: Monospace;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 25px;
+    border: 1px solid #2f3071;
+    background: rgba(47, 48, 113, 0.14);
+    color: white;
+    padding: 2px 3px;
+    font-family: Monospace;
 }
 
 .chat .chat-msg {
-	max-height: 200px;
-	width: 100%;
-	overflow-y: hidden;	
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg);
-	direction: rtl;
-	
-	pointer-events: none;
+    max-height: 200px;
+    width: 100%;
+    overflow-y: hidden;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    direction: rtl;
+
+    pointer-events: none;
 }
 
 .chat .chat-msg input {
@@ -286,52 +286,52 @@ body canvas.fog-of-war {
     display: block;
     width: 100%;
     pointer-events: none;
-    
+
     -webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg);
-	
-	direction: ltr;
-	
-	font-family: Monospace;
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+    direction: ltr;
+
+    font-family: Monospace;
 }
 
 /* room lobby */
 
 .room-lobby {
-	margin: 0px -10px;
-	position: relative;
+    margin: 0px -10px;
+    position: relative;
 }
 
 .room-lobby label {
-	padding: 5px 15px;
+    padding: 5px 15px;
 }
 
-.room-lobby label>i {
-	display: inline;
-	font-size: small;
-	font-style: normal;
+.room-lobby label > i {
+    display: inline;
+    font-size: small;
+    font-style: normal;
 }
 
 .room-lobby button {
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	margin: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
 }
 
 .room-lobby.new-room {
-	box-shadow: inset 0px 0px 70px rgba(255, 255, 255, 0.2);
-	border-radius: 5px;
-	padding: 5px;
+    box-shadow: inset 0px 0px 70px rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 5px;
 }
 
-h3+.room-lobby.new-room {
-	margin-top: 15px;
+h3 + .room-lobby.new-room {
+    margin-top: 15px;
 }
 
 .room-lobby.new-room button {
-	top: 50%;
-	margin-top: -16px;
-	right: 15px;
+    top: 50%;
+    margin-top: -16px;
+    right: 15px;
 }
